@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int N;
+    cin >> N;
+
+
+    for (int i = 1; i <= N; ++i) {
+        cout << i;
+        if (i < N) { //to remove the final space
+            cout << " ";
+        }
+    }
+
+    return 0;
+}
