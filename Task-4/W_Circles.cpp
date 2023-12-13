@@ -16,7 +16,7 @@ bool IsIntersect(double x1, double y1, double x2, double y2, double x3, double y
     //distance between centers
     double centerDistance = distance((x1 + x2) / 2, (y1 + y2) / 2, (x3 + x4) / 2, (y3 + y4) / 2);
 
-    return centerDistance < radiusSum;
+    return centerDistance <= radiusSum; //Wrong answer on test 3 bcz i forget ( = ) case 
 }
 
 int main() {
@@ -33,4 +33,3 @@ int main() {
 
     return 0;
 }
-//Wrong answer on test 3
